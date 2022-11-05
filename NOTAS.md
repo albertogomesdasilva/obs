@@ -1,4 +1,4 @@
- ->  AULA 125
+
 
 chmod 777 -R nomedapasta/
 
@@ -13448,3 +13448,23 @@ Fonte: https://www.localeplanet.com/icu/
 
 Licença#
 Faker é lançado sob a licença MIT. Consulte o arquivo LICENSE incluído para obter detalhes.
+
+Mudando a senha do root no Windows
+Iniciar > Executar, digite CMD e aperte enter
+
+Navegue até o diretório bin dentro da pasta onde o MySQL está instalado, pode ser C:\mysql\bin ou se você estiver usando o XAMPP será C:\xampp\mysql\bin
+
+Digite os seguintes comandos:
+
+mysql -u root mysql
+
+SET PASSWORD FOR root@localhost=PASSWORD('NOVASENHA');
+Pronto, a senha foi modificada… Não se esqueça de mudar a senha do phpMyAdmin (no arquivo config.inc.php).
+
+Mudando a senha do root no Linux
+Se você está mudando a senha pela primeira vez é só acessar o terminal e digitar:
+
+mysqladmin -u root password 'NOVASENHA'
+Caso você esteja trocando a senha do root é só usar o comando:
+
+mysqladmin -u root -p 'SENHAANTIGA' password 'NOVASENHA'
