@@ -13733,3 +13733,4 @@ CONTAINER ID   NAME      CPU %     MEM USAGE / LIMIT     MEM %     NET I/O      
 
 
 ##### VOLUMES RESOLVE O PROBLEMA DE PERSISTÊNCIA DE DADOS ####################
+--ignore-platform-req=ext-xml --ignore-platform-req=ext-dom --ignore-platform-req=ext-curl --ignore-platform-req=ext-dom
